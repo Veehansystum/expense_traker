@@ -1,0 +1,124 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+label {
+    font-size: 20px;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px 45px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    
+
+}
+
+.container>h1 {
+    margin-bottom: 20px;
+    font-family: sans-serif;
+    /* margin-left: 6rem; */
+    /* border-bottom: 2px solid purple;
+    width: fit-content; */
+
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.container input {
+    width: 100%;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+
+}
+
+.container input::placeholder {
+    font-size: 12px;
+    font-style: italic;
+}
+
+button {
+    background-color: purple;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+/* Expense tracker css */
+.expense-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+}
+
+.expense-description {
+    font-weight: bold;
+}
+
+.delete-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 4px 7px;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.user-section {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.amunts-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+
+}
+
+.income-amount {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.expense-amount {
+    color: #e74c3c;
+    font-weight: bold;
+}
