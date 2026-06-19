@@ -42,7 +42,7 @@ function Home() {
 
   const fetchExpenses = async () => {
     try {
-      const url = "http://localhost:8080/expenses";
+      const url = "https://expense-traker-aozw.vercel.app/expenses";
       const headers = {
         headers: {
           'Authorization': localStorage.getItem('token')
@@ -91,7 +91,7 @@ function Home() {
 
   const handleDeleteExpense=async(expenseId)=>{
   try {
-      const url = `http://localhost:8080/expenses/${expenseId}`;
+      const url = `https://expense-traker-aozw.vercel.app/expenses/${expenseId}`;
       const headers = {
         headers: {
           'Authorization': localStorage.getItem('token'),
@@ -115,7 +115,7 @@ function Home() {
   }
   useEffect(() => {
     fetchExpenses()
-  }, [])
+  }, [fetchExpenses])
 
   return (
     <div>
