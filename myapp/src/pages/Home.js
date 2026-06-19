@@ -115,7 +115,7 @@ function Home() {
   }
   useEffect(() => {
     fetchExpenses()
-  }, [fetchExpenses])
+  },[])
 
   return (
     <div>
