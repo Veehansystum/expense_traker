@@ -65,7 +65,7 @@ function Home() {
 
   const addExpenses = async (data) => {
     try {
-      const url = "http://localhost:8080/expenses";
+      const url = "https://expense-traker-aozw.vercel.app/expenses";
       const headers = {
         headers: {
           'Authorization': localStorage.getItem('token'),
